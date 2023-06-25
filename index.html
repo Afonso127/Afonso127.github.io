@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+     <!-- Links Bootstrap -->
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+ 
+     <!-- CSS LOCAL -->
+     <link rel="stylesheet" href="estilo.css"> 
+     
+     <!-- <script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script> -->
+    
+</head>
+
+    <body>
+            <header>
+
+                <div class="logo-container d-none d-md-block">
+                    <img src="uploads/hd-blue-a-neon-text-letter-png-31630494077h6ftqyzsir (2).png" alt="logo">
+                </div>
+
+                <nav class="navbar navbar-expand-sm custom-navbar">
+                  <div class="container-fluid">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                      <span class="navbar-toggler-icon"></span>
+                    </button>
+                
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                
+                        <li class="nav-item">
+                          <a class="nav-link" href="index.html"><span>0.1</span> Home</a>
+                        </li>
+                
+                        <li class="nav-item">
+                          <a class="nav-link" href="about.html"><span>0.1</span> About</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <span>0.2</span> Projects
+                          </a>
+                          <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" target="_blank" href="https://testedrsebastiao.000webhostapp.com/">Author website</a></li>
+                
+                          </ul>
+                        </li>
+                
+                      </ul>
+                
+                      <a class="btn line-btn-dark btn-icon btn-radius" href="uploads/cvafonsoneves.pdf" title="CV" download>Resume</a>
+                
+                    </div>
+                  </div>
+                </nav>
+               
+            </header>
+
+            <main>
+                <div id = "Front" class="front">
+                    <h1 class="greet">Hello, my name is_</h1>
+                    <div class="main-tit">
+                        Afonso Neves.
+                    </div>
+                    <div class="main2-tit">
+                        I build things for the web.
+                    </div>
+                    <div class="main-text">
+                        Strong believer about following dreams, I am a bachelor-trained nurse who has found true calling in coding. With a strong sense of duty, I am ready to take on new challenges and learn from innovative projects. 
+                        Enjoy my <span>interactive portfolio</span>.
+                    </div>
+
+                    <a class ="projectlink" target="_blank" href="https://testedrsebastiao.000webhostapp.com/"><button class="btn btn mt-5">Check out my first projet!</button></a>
+
+                        
+                    <div class="redes mt-5 d-flex gap-3" >
+                        <a class="fav" target="_blank" href="https://www.instagram.com/fonsineves/" ><img src="uploads/instagram1.svg" alt="insta"></a>
+                        <a class="fav" target="_blank" href="https://www.linkedin.com/in/afonso-maria-neves-34a050226/"><img src="uploads/linkedin1.svg" alt="linkedin"></a>
+                        <a class="fav" target="_blank" href="https://github.com/Afonso127"><img src="uploads/Sem Título.png" alt="linkedin"></a>
+                        <div id="emailBox" style="display: none;">
+                            <p>Email: afonsomaria127@gmail.com</p>
+                        </div>
+                        <a id ="mail" class="fav" onclick="showMail()"><img src="uploads/mail.png" alt="e-mail"></a>
+                        <div  id="teleBox" style="display: none;">
+                          <p>+351 934014760</p>
+                      </div>
+                      <a id ="mail" class="fav" style="background-color: aliceblue; border-radius: 10px;"onclick="showTele()"><img src="uploads/tele.png" alt="e-mail"></a>
+                           
+                        
+                    </div>
+                  
+                  
+
+                </div>
+              
+            </main>
+
+          
+        
+        <script src="main.js"></script>
+        <script>
+                document.addEventListener("mousemove", function(event) {
+                  var x = Math.round((event.clientX / window.innerWidth) * 88);
+                  var y = Math.round((event.clientY / window.innerHeight) * 0);
+                  var color = "rgb(" + x + "," + y + ",60)";
+                  document.getElementById("body").style.backgroundColor = color;
+            });
+        </script>
+
+    </body>
+</html>
+
+
